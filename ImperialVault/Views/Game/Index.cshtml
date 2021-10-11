@@ -1,0 +1,19 @@
+﻿@model Game
+
+<h2>Game Details</h2>
+
+<table class="table">
+    <tr>
+        <th>Game ID</th>
+        <th>Campaign Name</th>
+    </tr>
+
+    <tr>
+        <th>@Model.GameID</th>
+        <th>@Model.CampaignName</th>
+        @foreach (var player in Model.Players)
+        {
+            <th>@player</th>
+        }
+    </tr>
+</table>

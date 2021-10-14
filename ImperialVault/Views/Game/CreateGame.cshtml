@@ -1,0 +1,10 @@
+﻿@model Game
+
+<h2>Please enter the information below for your campaign</h2>
+
+@using (Html.BeginForm("SendGameToDatabase", "Game", "Post"))
+{
+    <label asp-for="CampaignName" class="control-label">Campaign Name</label>
+    <input type="text" name="CampaignName" class="form-control" value="@Model.CampaignName" />
+    <input type="submit" value="CreateGame" class="btn btn-primary" />
+}

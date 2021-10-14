@@ -1,0 +1,17 @@
+﻿@model Game
+
+<h2>Please fill in the fiels below to create your character</h2>
+
+@using (Html.BeginForm("AddPlayerToDatabase", "Game", "Post"))
+{
+    <label asp-for="UserToInsert.UserName" class="control-label">Player Name</label>
+    <input type="text" name="UserToInsert.UserName" class="form-control" />
+    <label asp-for="UserToInsert.CharacterName " class="control-label">Character Name</label>
+    <input type="text" name="UserToInsert.CharacterName" class="form-control" />
+    <label asp-for="UserToInsert.Equipment" class="control-label">Equipment</label>
+    <input type="text" name="UserToInsert.Equipment" class="form-control" />
+    <label asp-for="UserToInsert.Skills" class="control-label">Skills</label>
+    <input type="text" name="UserToInsert.Skills" class="form-control" />
+    <input asp-for="UserToInsert.CampaignID" type="hidden" value="@Model.CampaignID" />
+    <input type="submit" value="Add Character" class="btn btn-primary" />
+}

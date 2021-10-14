@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.11" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Dapper" Version="2.0.90" />
@@ -22,8 +22,61 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Game\" />
+    <Folder Include="wwwroot\Sounds\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Remove="appsettings.json" />
+    <Content Remove="wwwroot\Sounds\.DS_Store" />
+    <Content Remove="wwwroot\Sounds\AT_AT_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\AT_ST_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Darth_Vader_Breath_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Death_Star_Alarm_Sound_Effect .mp3" />
+    <Content Remove="wwwroot\Sounds\Dewback_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Door_Open_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Jabba_The_Hutt_Laugh_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Jawa_Ootanee_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Lightsaber_Igniting_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Lightsaber_Powering_Down_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Obi-Wan_The_Force_Will_Be_With_You_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Salacious_Crumb_Laugh_Sound_effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Star_Wars_Cantina_Theme_Song.mp3" />
+    <Content Remove="wwwroot\Sounds\Star_Wars_Main_Theme_Song.mp3" />
+    <Content Remove="wwwroot\Sounds\Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\Stormtrooper_Rifle_Firing_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\The_Force_Will_Be_With_You_Always_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\Info.plist" />
+    <Content Remove="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\The_Imperial_March_Theme_Song.mp3" />
+    <Content Remove="wwwroot\Sounds\Wilhelm_Scream_Sound_Effect.mp3" />
+    <Content Remove="wwwroot\Sounds\" />
+    <Content Remove="wwwroot\Images\star.svg" />
+    <Content Remove="wwwroot\Images\wars.svg" />
+    <Content Remove="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Sounds\.DS_Store" />
+    <None Include="wwwroot\Sounds\AT_AT_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\AT_ST_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Darth_Vader_Breath_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Death_Star_Alarm_Sound_Effect .mp3" />
+    <None Include="wwwroot\Sounds\Dewback_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Door_Open_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Jabba_The_Hutt_Laugh_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Jawa_Ootanee_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Lightsaber_Igniting_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Lightsaber_Powering_Down_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Obi-Wan_The_Force_Will_Be_With_You_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Salacious_Crumb_Laugh_Sound_effect.mp3" />
+    <None Include="wwwroot\Sounds\Star_Wars_Cantina_Theme_Song.mp3" />
+    <None Include="wwwroot\Sounds\Star_Wars_Main_Theme_Song.mp3" />
+    <None Include="wwwroot\Sounds\Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\Stormtrooper_Rifle_Firing_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\The_Force_Will_Be_With_You_Always_Sound_Effect.mp3" />
+    <None Include="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\Info.plist" />
+    <None Include="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\The_Imperial_March_Theme_Song.mp3" />
+    <None Include="wwwroot\Sounds\Wilhelm_Scream_Sound_Effect.mp3" />
+    <None Include="wwwroot\Images\star.svg" />
+    <None Include="wwwroot\Images\wars.svg" />
   </ItemGroup>
 </Project>

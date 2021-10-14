@@ -1,0 +1,66 @@
+﻿@model Game
+
+<h2>@Model.CampaignName Players</h2>
+
+
+<table class="table">
+    <tr>
+        <th>Player</th>
+        <th>Character Name</th>
+        <th>Experience</th>
+        <th>Credits</th>
+        <th>Equipmnet</th>
+        <th>Skills</th>
+    </tr>
+
+    @foreach (var user in Model.Players)
+    {
+        <tr>
+            <td><a href=/Game/ViewCharacter/@user.UserID>@user.UserName</a></td>
+            <td>@user.CharacterName</td>
+            <td>@user.XP</td>
+            <td>@user.Credits</td>
+            <td>@user.Equipment</td>
+            <td>@user.Skills</td>
+        </tr>
+    }
+</table>
+
+<div style="display: block">
+    <a href="/Game/AddPlayer/@Model.CampaignID">Add Player to Game</a>
+</div>
+
+<div style="display: block">
+    @using (Html.BeginForm("DeleteGame", "Game", "Post"))
+    {
+        <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this game and characters" />
+    }
+</div>
+
+<div class="container">
+    <div class="player">
+        <section>
+            <audio class="chewbacca" title="All Too Easy">
+                <source src="Sounds/Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
+            </audio>
+            <audio class="angry" title="Don't Drive Angry Clip">
+                <source src="audio/angry.mp3" />
+                <source src="audio/angry.ogg" />
+                <source src="audio/angry.wav" />
+            </audio>
+            <audio class="luck" title="No Such Thing as Luck Clip">
+                <source src="audio/luck.mp3" />
+                <source src="audio/luck.wav" />
+            </audio>
+            <audio class="raven" title="Great Odin's Raven! Clip">
+                <source src="audio/raven.mp3" />
+                <source src="audio/raven.ogg" />
+                <source src="audio/raven.wav" />
+            </audio>
+            <ul id="doc" class="list floated soundboard clearfix">
+                <!-- Audio soundboard will go here -->
+            </ul>
+        </section>
+    </div> <!-- /player -->
+</div> <!-- /container -->

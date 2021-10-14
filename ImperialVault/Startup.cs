@@ -28,12 +28,12 @@ namespace ImperialVault
         {
             services.AddScoped<IDbConnection>((s) =>
             {
-                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("bestbuy"));
+                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("vault"));
                 conn.Open();
                 return conn;
             });
 
-            services.AddTransient<IGame, Game>();
+            services.AddTransient<IGameRepository, GameRepository>();
 
             services.AddControllersWithViews();
         }

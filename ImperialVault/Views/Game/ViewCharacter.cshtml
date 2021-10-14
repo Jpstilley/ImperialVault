@@ -1,0 +1,38 @@
+﻿@model Users
+
+<h2>@Model.UserName's @Model.CharacterName</h2>
+
+<table class="table">
+    <tr>
+        <th>Player</th>
+        <th>Character Name</th>
+        <th>Experience</th>
+        <th>Credits</th>
+        <th>Equipmnet</th>
+        <th>Skills</th>
+    </tr>
+
+    <tr>
+        <td>@Model.UserName</td>
+        <td>@Model.CharacterName</td>
+        <td>@Model.XP</td>
+        <td>@Model.Credits</td>
+        <td>@Model.Equipment</td>
+        <td>@Model.Skills</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Game/UpdateCharacter/@Model.UserID">Update Character Stats</a>
+</div>
+
+<div style="display: block">
+    @using (Html.BeginForm("DeleteCharacter", "Game", "Post"))
+    {
+        <input type="hidden" asp-for="UserID" value="@Model.UserID" />
+        <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this character" />
+    }
+</div>
+
+

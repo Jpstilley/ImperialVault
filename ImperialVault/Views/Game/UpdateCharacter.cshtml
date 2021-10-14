@@ -1,0 +1,17 @@
+﻿@model Users
+
+<h2>Update @Model.UserName's @Model.CharacterName</h2>
+
+@using (Html.BeginForm("UpdateCharacterToDatabase", "Game", "Post"))
+{
+    <input asp-for="UserID" type="hidden" value="@Model.UserID" />
+    <label asp-for="XP" class="control-label">Experience</label>
+    <input type="number" step="1" name="XP" class="form-control" value="@Model.XP" />
+    <label asp-for="Credits" class="control-label">Credits</label>
+    <input type="number" step="25" name="Credits" class="form-control" value="@Model.Credits" />
+    <label asp-for="Equipment" class="control-label">Equipment</label>
+    <input type="text" name="Equipment" class="form-control" value="@Model.Equipment" />
+    <label asp-for="Skills" class="control-label">Skills</label>
+    <input type="text" name="Skills" class="form-control" value="@Model.Skills" />
+    <input type="submit" value="Update Character" class="btn btn-primary" />
+}

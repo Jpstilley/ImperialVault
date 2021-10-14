@@ -1,19 +1,21 @@
-﻿@model Game
+﻿@model IEnumerable<Game>
 
 <h2>Game Details</h2>
 
 <table class="table">
     <tr>
-        <th>Game ID</th>
         <th>Campaign Name</th>
     </tr>
 
-    <tr>
-        <th>@Model.GameID</th>
-        <th>@Model.CampaignName</th>
-        @foreach (var player in Model.Players)
-        {
-            <th>@player</th>
-        }
-    </tr>
-</table>
+
+    @foreach (var game in Model)
+     {
+        <tr>
+            <td><a href=/Game/ViewGame/@game.CampaignID>@game.CampaignName</a></td>
+        </tr>
+     }
+    </table>
+
+<div style="display: block">
+    <a href="/Game/CreateGame/">Create A New Game</a>
+</div>

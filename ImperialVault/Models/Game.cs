@@ -5,31 +5,20 @@ using Dapper;
 
 namespace ImperialVault.Models
 {
-    public class Game : IGame
+    public class Game 
     {
         public int CampaignID { get; set; }
 
         public string CampaignName { get; set; }
 
-        public List<Game> Players { get; set; }
+        public IEnumerable<Users> Players { get; set; }
 
-        private readonly IDbConnection _conn;
+        public Users UserToInsert { get; set; }
 
-        public Game(IDbConnection conn)
+        public Game()
         {
-            _conn = conn;
-        }
+             
+        }         
 
-        public Game(int gameID, string gameModel, List<Game> players)
-        {
-            CampaignID = gameID;
-            CampaignName = gameModel;
-            Players = players;
-        }
-
-        public IEnumerable<Game> GetPlayers(int gameID)
-        {
-            return _conn.Query<Game>("SELECT * FROM USERS WHERE GameID = @gameID;", new { gameID = gameID });
-        }
     }
 }

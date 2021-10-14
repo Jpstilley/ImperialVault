@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Users>
+
+    <h2>Campaign Characters</h2>
+
+    <table class="table">
+        <tr>
+            <th>Player</th>
+            <th>Character Name</th>
+            <th>Experience</th>
+            <th>Credits</th>
+            <th>Equipmnet</th>
+            <th>Skills</th>
+        </tr>
+
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td><a href=/Game/ViewCharacter/@user.UserID>@user.UserName</a></td>
+            <td>@user.CharacterName</td>
+            <td>@user.XP</td>
+            <td>@user.Credits</td>
+            <td>@user.Equipment</td>
+            <td>@user.Skills</td>
+        </tr>
+        }
+    </table>

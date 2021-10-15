@@ -22,7 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Game\" />
-    <Folder Include="wwwroot\Sounds\" />
+    <Folder Include="wwwroot\sounds\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
   <ItemGroup>
@@ -54,29 +54,27 @@
     <Content Remove="wwwroot\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\Sounds\.DS_Store" />
-    <None Include="wwwroot\Sounds\AT_AT_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\AT_ST_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Darth_Vader_Breath_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Death_Star_Alarm_Sound_Effect .mp3" />
-    <None Include="wwwroot\Sounds\Dewback_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Door_Open_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Jabba_The_Hutt_Laugh_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Jawa_Ootanee_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Lightsaber_Igniting_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Lightsaber_Powering_Down_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Obi-Wan_The_Force_Will_Be_With_You_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Salacious_Crumb_Laugh_Sound_effect.mp3" />
-    <None Include="wwwroot\Sounds\Star_Wars_Cantina_Theme_Song.mp3" />
-    <None Include="wwwroot\Sounds\Star_Wars_Main_Theme_Song.mp3" />
-    <None Include="wwwroot\Sounds\Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\Stormtrooper_Rifle_Firing_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\The_Force_Will_Be_With_You_Always_Sound_Effect.mp3" />
-    <None Include="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\Info.plist" />
-    <None Include="wwwroot\Sounds\The_Imperial_March_Theme_Song.mp3.download\The_Imperial_March_Theme_Song.mp3" />
-    <None Include="wwwroot\Sounds\Wilhelm_Scream_Sound_Effect.mp3" />
-    <None Include="wwwroot\Images\star.svg" />
-    <None Include="wwwroot\Images\wars.svg" />
+    <None Include="wwwroot\sounds\.DS_Store" />
+    <None Include="wwwroot\sounds\AT_AT_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\AT_ST_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Darth_Vader_Breath_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Death_Star_Alarm_Sound_Effect .mp3" />
+    <None Include="wwwroot\sounds\Dewback_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Door_Open_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Jabba_The_Hutt_Laugh_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Jawa_Ootanee_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Lightsaber_Igniting_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Lightsaber_Powering_Down_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Obi-Wan_The_Force_Will_Be_With_You_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Salacious_Crumb_Laugh_Sound_effect.mp3" />
+    <None Include="wwwroot\sounds\Star_Wars_Cantina_Theme_Song.mp3" />
+    <None Include="wwwroot\sounds\Star_Wars_Main_Theme_Song.mp3" />
+    <None Include="wwwroot\sounds\Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\Stormtrooper_Rifle_Firing_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\The_Force_Will_Be_With_You_Always_Sound_Effect.mp3" />
+    <None Include="wwwroot\sounds\The_Imperial_March_Theme_Song.mp3.download\Info.plist" />
+    <None Include="wwwroot\sounds\The_Imperial_March_Theme_Song.mp3.download\The_Imperial_March_Theme_Song.mp3" />
+    <None Include="wwwroot\sounds\Wilhelm_Scream_Sound_Effect.mp3" />
   </ItemGroup>
 </Project>

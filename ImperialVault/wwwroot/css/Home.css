@@ -1,0 +1,13 @@
+﻿a {
+   color:white;
+   text-align:center;
+   padding-bottom: 5px;
+}
+
+.starwars-demo {
+    display:flex;
+    flex-direction:column;
+    gap: 1vh 0;
+}
+
+

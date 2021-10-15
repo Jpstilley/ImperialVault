@@ -22,16 +22,20 @@
     </tr>
 </table>
 
-<div style="display: block">
-    <a href="/Game/UpdateCharacter/@Model.UserID">Update Character Stats</a>
+<div style="display: block; text-align: center">
+    <button style="background-color: rgba(191, 191, 191, 0.1)"><a href="/Game/ViewGame/@Model.CampaignID" style="color: white">Return to Campaign</a></button>
 </div>
 
-<div style="display: block">
+<div style="display: block; text-align: center">
+    <button style="background-color: rgba(191, 191, 191, 0.1)"><a href="/Game/UpdateCharacter/@Model.UserID" style="color: white">Update Character Stats</a></button>
+</div>
+
+<div style="display: block; text-align: center">
     @using (Html.BeginForm("DeleteCharacter", "Game", "Post"))
     {
         <input type="hidden" asp-for="UserID" value="@Model.UserID" />
         <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this character" />
+        <input type="submit" style="color: white; background-color: rgba(191, 191, 191, 0.1)" onclick="return confirm('Are you sure?')" value="Delete this character" />
     }
 </div>
 

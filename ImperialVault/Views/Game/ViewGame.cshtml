@@ -1,9 +1,8 @@
 ﻿@model Game
 
-<h2>@Model.CampaignName Players</h2>
+<h2>Campaign: @Model.CampaignName Players</h2>
 
-
-<table class="table">
+<table class="table" style="padding-bottom: -50%">
     <tr>
         <th>Player</th>
         <th>Character Name</th>
@@ -26,41 +25,56 @@
     }
 </table>
 
-<div style="display: block">
-    <a href="/Game/AddPlayer/@Model.CampaignID">Add Player to Game</a>
+
+
+<div style="display: block; text-align: center">
+    <button style="background-color: rgba(191, 191, 191, 0.1)"><a style="color:white"href="/Game/AddPlayer/@Model.CampaignID">Add Player to Game</a></button>
 </div>
 
-<div style="display: block">
+<div style="display: block; text-align: center">
     @using (Html.BeginForm("DeleteGame", "Game", "Post"))
     {
         <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this game and characters" />
+        <input type="submit" style="color: white; background-color: rgba(191, 191, 191, 0.1)" onclick="return confirm('Are you sure?')" value="Delete this game and characters" />
     }
 </div>
 
-<div class="container">
-    <div class="player">
-        <section>
-            <audio class="chewbacca" title="All Too Easy">
-                <source src="Sounds/Darth_Vader_All_Too_Easy_Sound_Effect.mp3" />
-            </audio>
-            <audio class="angry" title="Don't Drive Angry Clip">
-                <source src="audio/angry.mp3" />
-                <source src="audio/angry.ogg" />
-                <source src="audio/angry.wav" />
-            </audio>
-            <audio class="luck" title="No Such Thing as Luck Clip">
-                <source src="audio/luck.mp3" />
-                <source src="audio/luck.wav" />
-            </audio>
-            <audio class="raven" title="Great Odin's Raven! Clip">
-                <source src="audio/raven.mp3" />
-                <source src="audio/raven.ogg" />
-                <source src="audio/raven.wav" />
-            </audio>
-            <ul id="doc" class="list floated soundboard clearfix">
-                <!-- Audio soundboard will go here -->
-            </ul>
-        </section>
-    </div> <!-- /player -->
-</div> <!-- /container -->
+<h2>Soundboard</h2>
+<table class="table">
+    <tr>
+        <td>
+            <audio src="/sounds/Darth_Vader_All_Too_Easy_Sound_Effect.mp3" id="myAudio"></audio>
+            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio()">All Too Easy</button>
+            <script>function playMyAudio() {
+                    document.getElementById("myAudio").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Jabba_The_Hutt_Laugh_Sound_Effect.mp3" id="myAudio2"></audio>
+            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio2()">Jabba Laugh</button>
+            <script>function playMyAudio2() {
+                    document.getElementById("myAudio2").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Lightsaber_Igniting_Sound_Effect.mp3" id="myAudio3"></audio>
+            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
+                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio3()">Lightsaber Ignite</button>
+            <script>function playMyAudio3() {
+                    document.getElementById("myAudio3").play();
+                }</script>
+        </td>
+        
+    </tr>
+
+    
+
+
+</table>
+<script src="~/js/site.js" asp-append-version="true"></script>
+

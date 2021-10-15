@@ -58,9 +58,17 @@ html {
   min-height: 100%;
 }
 
+.Stars {
+    background-image: url("~/images/StarScreen.jpg");
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: black;
+  background-size:cover;
 }
 .footer {
   position: absolute;

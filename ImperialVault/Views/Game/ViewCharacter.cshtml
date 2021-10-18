@@ -8,7 +8,7 @@
         <th>Character Name</th>
         <th>Experience</th>
         <th>Credits</th>
-        <th>Equipmnet</th>
+        <th>Equipment</th>
         <th>Skills</th>
     </tr>
 
@@ -27,7 +27,7 @@
 </div>
 
 <div style="display: block; text-align: center">
-    <button style="background-color: rgba(191, 191, 191, 0.1)"><a href="/Game/UpdateCharacter/@Model.UserID" style="color: white">Update Character Stats</a></button>
+    <button  style="background-color: rgba(191, 191, 191, 0.1)"><a href="/Game/UpdateCharacter/@Model.UserID" style="color: white">Update Character Stats</a></button>
 </div>
 
 <div style="display: block; text-align: center">
@@ -35,7 +35,7 @@
     {
         <input type="hidden" asp-for="UserID" value="@Model.UserID" />
         <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
-        <input type="submit" style="color: white; background-color: rgba(191, 191, 191, 0.1)" onclick="return confirm('Are you sure?')" value="Delete this character" />
+        <input type="submit" class="delete" onclick="return confirm('Are you sure?')" value="Delete this character" />
     }
 </div>
 

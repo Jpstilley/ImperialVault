@@ -39,7 +39,7 @@ namespace ImperialVault.Models
 
         public void DeleteGame(Game game)
         {
-            _conn.Execute("DELETE FROM Game WHERE Campaign = @id;",
+            _conn.Execute("DELETE FROM Game WHERE CampaignID = @id;",
                                        new { id = game.CampaignID });
             _conn.Execute("DELETE FROM Users WHERE CampaignID = @id;",
                                        new { id = game.CampaignID });

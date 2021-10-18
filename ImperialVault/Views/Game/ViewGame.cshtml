@@ -8,7 +8,7 @@
         <th>Character Name</th>
         <th>Experience</th>
         <th>Credits</th>
-        <th>Equipmnet</th>
+        <th>Equipment</th>
         <th>Skills</th>
     </tr>
 
@@ -35,41 +35,199 @@
     @using (Html.BeginForm("DeleteGame", "Game", "Post"))
     {
         <input type="hidden" asp-for="CampaignID" value="@Model.CampaignID" />
-        <input type="submit" style="color: white; background-color: rgba(191, 191, 191, 0.1)" onclick="return confirm('Are you sure?')" value="Delete this game and characters" />
+        <input type="submit" class="delete" onclick="return confirm('Are you sure?')" value="Delete this campaign and all of it's characters" />
     }
 </div>
 
-<h2>Soundboard</h2>
+<h2 style="padding-top: 10px">Soundboard</h2>
 <table class="table">
     <tr>
         <td>
             <audio src="/sounds/Darth_Vader_All_Too_Easy_Sound_Effect.mp3" id="myAudio"></audio>
-            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio()">All Too Easy</button>
+            <button class="invisibutton" onClick="playMyAudio()">
+                All Too Easy
+            </button>
             <script>function playMyAudio() {
                     document.getElementById("myAudio").play();
                 }</script>
         </td>
         <td>
             <audio src="/sounds/Jabba_The_Hutt_Laugh_Sound_Effect.mp3" id="myAudio2"></audio>
-            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio2()">Jabba Laugh</button>
+            <button class="invisibutton" onClick="playMyAudio2()">
+                Jabba Laugh
+            </button>
             <script>function playMyAudio2() {
                     document.getElementById("myAudio2").play();
                 }</script>
         </td>
         <td>
             <audio src="/sounds/Lightsaber_Igniting_Sound_Effect.mp3" id="myAudio3"></audio>
-            <button onmouseover="style='text-decoration:underline;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    onmouseout="style='text-decoration:none;background-color: rgba(191, 191, 191, 0);border:none; color:white'"
-                    style="background-color: rgba(191, 191, 191, 0); border:none; color:white"  onClick="playMyAudio3()">Lightsaber Ignite</button>
+            <button class="invisibutton" onClick="playMyAudio3()">
+                Lightsaber Ignite
+            </button>
             <script>function playMyAudio3() {
                     document.getElementById("myAudio3").play();
                 }</script>
         </td>
-        
+        <td>
+            <audio src="/sounds/Wilhelm_Scream_Sound_Effect.mp3" id="myAudio4"></audio>
+            <button class="invisibutton" onClick="playMyAudio4()">
+                Wilhelm Scream
+            </button>
+            <script>function playMyAudio4() {
+                    document.getElementById("myAudio4").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Obi-Wan_The_Force_Will_Be_With_You_Sound_Effect.mp3" id="myAudio5"></audio>
+            <button class="invisibutton" onClick="playMyAudio5()">
+                The Force Will Be With You
+            </button>
+            <script>function playMyAudio5() {
+                    document.getElementById("myAudio5").play();
+                }</script>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <audio src="/sounds/AT_AT_Sound_Effect.mp3" id="myAudio6"></audio>
+            <button class="invisibutton" onClick="playMyAudio6()">
+                AT-AT
+            </button>
+            <script>function playMyAudio6() {
+                    document.getElementById("myAudio6").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/AT_ST_Sound_Effect.mp3" id="myAudio7"></audio>
+            <button class="invisibutton" onClick="playMyAudio7()">
+                AT-ST
+            </button>
+            <script>function playMyAudio7() {
+                    document.getElementById("myAudio7").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Death_Star_Alarm_Sound_Effect .mp3" id="myAudio8"></audio>
+            <button class="invisibutton" onClick="playMyAudio8()">
+                Alarm
+            </button>
+            <script>function playMyAudio8() {
+                    document.getElementById("myAudio8").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Dewback_Sound_Effect.mp3" id="myAudio9"></audio>
+            <button class="invisibutton" onClick="playMyAudio9()">
+                Dewback Rider
+            </button>
+            <script>function playMyAudio9() {
+                    document.getElementById("myAudio9").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Door_Open_Sound_Effect.mp3" id="myAudio10"></audio>
+            <button class="invisibutton" onClick="playMyAudio10()">
+                Door Open
+            </button>
+            <script>function playMyAudio10() {
+                    document.getElementById("myAudio10").play();
+                }</script>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <audio src="/sounds/Jawa_Ootanee_Sound_Effect.mp3" id="myAudio11"></audio>
+            <button class="invisibutton" onClick="playMyAudio11()">
+                Jawa Ootanee
+            </button>
+            <script>function playMyAudio11() {
+                    document.getElementById("myAudio11").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Star_Wars_Cantina_Theme_Song.mp3" id="myAudio12"></audio>
+            <button class="invisibutton" onClick="playMyAudio12()">
+                Cantina
+            </button>
+            <script>function playMyAudio12() {
+                    document.getElementById("myAudio12").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Salacious_Crumb_Laugh_Sound_effect.mp3" id="myAudio13"></audio>
+            <button class="invisibutton" onClick="playMyAudio13()">
+                Salacious Laugh
+            </button>
+            <script>function playMyAudio13() {
+                    document.getElementById("myAudio13").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" id="myAudio14"></audio>
+            <button class="invisibutton" onClick="playMyAudio14()">
+                Tusken Warcry
+            </button>
+            <script>function playMyAudio14() {
+                    document.getElementById("myAudio14").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Star_Wars_Main_Theme_Song.mp3" id="myAudio15"></audio>
+            <button class="invisibutton" onClick="playMyAudio15()">
+                Main Theme
+            </button>
+            <script>function playMyAudio15() {
+                    document.getElementById("myAudio15").play();
+                }</script>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <audio src="/sounds/The_Imperial_March_Theme_Song.mp3" id="myAudio16"></audio>
+            <button class="invisibutton" onClick="playMyAudio16()">
+                Imperial March
+            </button>
+            <script>function playMyAudio16() {
+                    document.getElementById("myAudio16").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Stormtrooper_Rifle_Firing_Sound_Effect.mp3" id="myAudio17"></audio>
+            <button class="invisibutton" onClick="playMyAudio17()">
+                Blaster Firing
+            </button>
+            <script>function playMyAudio17() {
+                    document.getElementById("myAudio17").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Lightsaber_Powering_Down_Sound_Effect.mp3" id="myAudio18"></audio>
+            <button class="invisibutton" onClick="playMyAudio18()">
+                Lightsaber Retract
+            </button>
+            <script>function playMyAudio18() {
+                    document.getElementById("myAudio18").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Luke_Skywalker_Scream_Sound_Effect.mp3" id="myAudio19"></audio>
+            <button class="invisibutton" onClick="playMyAudio19()">
+                Skywalker Scream
+            </button>
+            <script>function playMyAudio19() {
+                    document.getElementById("myAudio19").play();
+                }</script>
+        </td>
+        <td>
+            <audio src="/sounds/Han_Solo_Bad_Feeling_About_This_Sound_Effect.mp3" id="myAudio20"></audio>
+            <button class="invisibutton" onClick="playMyAudio20()">
+                I've Got A Bad Feeling
+            </button>
+            <script>function playMyAudio20() {
+                    document.getElementById("myAudio20").play();
+                }</script>
+        </td>
     </tr>
 
     

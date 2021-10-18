@@ -4,14 +4,19 @@
 
 @using (Html.BeginForm("UpdateCharacterToDatabase", "Game", "Post"))
 {
-    <input asp-for="UserID" type="hidden" value="@Model.UserID" />
-    <label asp-for="XP" class="control-label">Experience</label>
-    <input type="number" step="1" name="XP" class="form-control" value="@Model.XP" />
-    <label asp-for="Credits" class="control-label">Credits</label>
-    <input type="number" step="25" name="Credits" class="form-control" value="@Model.Credits" />
-    <label asp-for="Equipment" class="control-label">Equipment</label>
-    <input type="text" name="Equipment" class="form-control" value="@Model.Equipment" />
-    <label asp-for="Skills" class="control-label">Skills</label>
-    <input type="text" name="Skills" class="form-control" value="@Model.Skills" />
-    <input type="submit" value="Update Character" class="btn btn-primary" />
+    <div style="display:block; text-align:center" class="centeredForm">
+        <input asp-for="UserID" type="hidden" value="@Model.UserID" />
+        <label asp-for="XP" style="text-align:left">Experience</label>
+        <input type="number" step="1" name="XP" class="formClear" value="@Model.XP" /><br />
+        <label  style="margin-right: 29px;" asp-for="Credits" >Credits </label>
+        <input type="number" step="25" name="Credits" class="formClear" value="@Model.Credits" /><br />
+        <label asp-for="Equipment"style="margin-right:3px" >Equipment</label>
+        <input type="text"  name="Equipment" class="formClear" value="@Model.Equipment" /><br />
+        <label asp-for="Skills" style="margin-right:43px">Skills    </label>
+        <input type="text" name="Skills" class="formClear" value="@Model.Skills" />
+        <div style="display:block; text-align:center">
+            <input type="submit" class="delete" value="Update Character" />
+        </div>
+    </div>
+    
 }

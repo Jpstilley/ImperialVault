@@ -29,8 +29,57 @@ a {
     color: white;
 }
 
+a:hover{
+    color:white;
+}
+
 .invisibutton {
     background-color: rgba(191, 191, 191, 0);
     border: none;
     color: white;
 }
+
+.invisibutton:hover {
+        text-decoration: underline;
+        background-color: rgba(191, 191, 191, 0);
+        border: none;
+        color: white;
+}
+
+.delete {
+    color: white;
+    background-color: rgba(191, 191, 191, 0.1);
+    margin-left:auto;
+    margin-right:auto;
+    align-self:center;
+}
+
+.delete:hover {
+    text-decoration: underline;
+    background-color: rgba(191, 191, 191, 0.1);
+    color: white;
+}
+
+.centeredForm{
+
+    
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.formClear {
+    width: 35%;
+    background-color: rgba(191, 191, 191, 0.3);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+}
+
+
+
+

@@ -4,7 +4,11 @@
 
 @using (Html.BeginForm("SendGameToDatabase", "Game", "Post"))
 {
-    <label asp-for="CampaignName" class="control-label">Campaign Name</label>
-    <input type="text" name="CampaignName" class="form-control" value="@Model.CampaignName" />
-    <input type="submit" value="CreateGame" class="btn btn-primary" />
-}
+    <div style="display:block; text-align:center" class="centeredForm">
+        <label asp-for="CampaignName" >Campaign Name</label>
+        <input type="text" name="CampaignName" class="formClear" value="@Model.CampaignName" />
+        <div style="display:block; text-align:center">
+            <input type="submit" value="Create Game" class="delete" />
+        </div>
+    </div>
+    }

@@ -72,9 +72,6 @@
     <None Include="wwwroot\sounds\Star_Wars_Main_Theme_Song.mp3" />
     <None Include="wwwroot\sounds\Star_Wars_Tusken_Raider_Warcry_Sound_Effect.mp3" />
     <None Include="wwwroot\sounds\Stormtrooper_Rifle_Firing_Sound_Effect.mp3" />
-    <None Include="wwwroot\sounds\The_Force_Will_Be_With_You_Always_Sound_Effect.mp3" />
-    <None Include="wwwroot\sounds\The_Imperial_March_Theme_Song.mp3.download\Info.plist" />
-    <None Include="wwwroot\sounds\The_Imperial_March_Theme_Song.mp3.download\The_Imperial_March_Theme_Song.mp3" />
     <None Include="wwwroot\sounds\Wilhelm_Scream_Sound_Effect.mp3" />
   </ItemGroup>
 </Project>
